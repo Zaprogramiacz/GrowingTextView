@@ -10,7 +10,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
              options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = scene as? UIWindowScene else { return }
     window = UIWindow(windowScene: windowScene)
-    window?.rootViewController = UIHostingController(rootView: ContentView())
+    window?.rootViewController = UIHostingController(rootView: ChatView())
     window?.makeKeyAndVisible()
   }
 

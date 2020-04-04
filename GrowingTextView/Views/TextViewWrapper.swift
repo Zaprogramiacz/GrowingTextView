@@ -27,13 +27,14 @@ struct TextViewWrapper: UIViewRepresentable {
   }
 
   class Coordinator: NSObject, UITextViewDelegate {
+
     init(text: Binding<String?>, focused: Binding<Bool>) {
       self._text = text
       self._focused = focused
     }
 
-    @Binding var text: String?
-    @Binding var focused: Bool
+    @Binding private var text: String?
+    @Binding private var focused: Bool
 
     func textViewDidChange(_ textView: UITextView) {
       text = textView.text
@@ -46,6 +47,7 @@ struct TextViewWrapper: UIViewRepresentable {
     func textViewDidEndEditing(_ textView: UITextView) {
       focused = false
     }
+
   }
 }
 

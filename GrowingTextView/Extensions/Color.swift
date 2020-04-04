@@ -10,4 +10,8 @@ extension Color {
     .init("inputBorder")
   }
 
+  static var messageBackground: Color {
+    .init("messageBackground")
+  }
+
 }
