@@ -11,7 +11,6 @@
 		47ABE81D2438A16100C870FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE81C2438A16100C870FD /* SceneDelegate.swift */; };
 		47ABE81F2438A16100C870FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE81E2438A16100C870FD /* ContentView.swift */; };
 		47ABE8212438A16400C870FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8202438A16400C870FD /* Assets.xcassets */; };
-		47ABE8242438A16400C870FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8232438A16400C870FD /* Preview Assets.xcassets */; };
 		47ABE8272438A16400C870FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8252438A16400C870FD /* LaunchScreen.storyboard */; };
 		47ABE8322438A16500C870FD /* GrowingTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */; };
 /* End PBXBuildFile section */
@@ -32,7 +31,6 @@
 		47ABE81C2438A16100C870FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		47ABE81E2438A16100C870FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47ABE8202438A16400C870FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		47ABE8232438A16400C870FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47ABE8262438A16400C870FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47ABE8282438A16400C870FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowingTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,32 +77,55 @@
 		47ABE8192438A16100C870FD /* GrowingTextView */ = {
 			isa = PBXGroup;
 			children = (
-				47ABE81A2438A16100C870FD /* AppDelegate.swift */,
-				47ABE81C2438A16100C870FD /* SceneDelegate.swift */,
-				47ABE81E2438A16100C870FD /* ContentView.swift */,
-				47ABE8202438A16400C870FD /* Assets.xcassets */,
-				47ABE8252438A16400C870FD /* LaunchScreen.storyboard */,
-				47ABE8282438A16400C870FD /* Info.plist */,
-				47ABE8222438A16400C870FD /* Preview Content */,
+				47ABE83E2438A2FA00C870FD /* Application */,
+				47ABE83C2438A2BB00C870FD /* SupportingFiles */,
+				47ABE83F2438A30600C870FD /* Views */,
 			);
 			path = GrowingTextView;
-			sourceTree = "<group>";
-		};
-		47ABE8222438A16400C870FD /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				47ABE8232438A16400C870FD /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		47ABE8302438A16500C870FD /* GrowingTextViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				47ABE83D2438A2EA00C870FD /* SupportingFiles */,
 				47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */,
-				47ABE8332438A16500C870FD /* Info.plist */,
 			);
 			path = GrowingTextViewTests;
+			sourceTree = "<group>";
+		};
+		47ABE83C2438A2BB00C870FD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				47ABE8202438A16400C870FD /* Assets.xcassets */,
+				47ABE8252438A16400C870FD /* LaunchScreen.storyboard */,
+				47ABE8282438A16400C870FD /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		47ABE83D2438A2EA00C870FD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				47ABE8332438A16500C870FD /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		47ABE83E2438A2FA00C870FD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				47ABE81A2438A16100C870FD /* AppDelegate.swift */,
+				47ABE81C2438A16100C870FD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		47ABE83F2438A30600C870FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47ABE81E2438A16100C870FD /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47ABE8272438A16400C870FD /* LaunchScreen.storyboard in Resources */,
-				47ABE8242438A16400C870FD /* Preview Assets.xcassets in Resources */,
 				47ABE8212438A16400C870FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,10 +383,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GrowingTextView/Preview Content\"";
 				DEVELOPMENT_TEAM = XRT2TCPYP7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GrowingTextView/Info.plist;
+				INFOPLIST_FILE = GrowingTextView/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,10 +402,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GrowingTextView/Preview Content\"";
 				DEVELOPMENT_TEAM = XRT2TCPYP7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GrowingTextView/Info.plist;
+				INFOPLIST_FILE = GrowingTextView/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +423,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRT2TCPYP7;
-				INFOPLIST_FILE = GrowingTextViewTests/Info.plist;
+				INFOPLIST_FILE = GrowingTextViewTests/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -427,7 +445,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XRT2TCPYP7;
-				INFOPLIST_FILE = GrowingTextViewTests/Info.plist;
+				INFOPLIST_FILE = GrowingTextViewTests/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
