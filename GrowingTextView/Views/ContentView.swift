@@ -4,9 +4,14 @@ struct ContentView: View {
   @State var text: String?
 
   var body: some View {
-    VStack {
-      Text(text ?? "")
-      TextViewWrapper(text: $text)
+    ZStack {
+      Color.background
+        .edgesIgnoringSafeArea(.all)
+      VStack {
+        GrowingTextInputView(text: $text, placeholder: "Placeholder")
+          .cornerRadius(10)
+          .padding()
+      }
     }
   }
 }
