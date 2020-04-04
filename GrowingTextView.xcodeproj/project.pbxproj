@@ -13,8 +13,7 @@
 		47ABE8212438A16400C870FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8202438A16400C870FD /* Assets.xcassets */; };
 		47ABE8272438A16400C870FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8252438A16400C870FD /* LaunchScreen.storyboard */; };
 		47ABE8322438A16500C870FD /* GrowingTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */; };
-		47ABE8422438A5F400C870FD /* GrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8412438A5F400C870FD /* GrowingTextView.swift */; };
-		47ABE8452438AB0E00C870FD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 47ABE8442438AB0E00C870FD /* SnapshotTesting */; };
+		47ABE84A2438AD8E00C870FD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 47ABE8492438AD8E00C870FD /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 		47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowingTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextViewTests.swift; sourceTree = "<group>"; };
 		47ABE8332438A16500C870FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47ABE8412438A5F400C870FD /* GrowingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47ABE8452438AB0E00C870FD /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47ABE84A2438AD8E00C870FD /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +64,7 @@
 				47ABE8192438A16100C870FD /* GrowingTextView */,
 				47ABE8302438A16500C870FD /* GrowingTextViewTests */,
 				47ABE8182438A16100C870FD /* Products */,
+				47ABE8462438AD8300C870FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +127,15 @@
 			isa = PBXGroup;
 			children = (
 				47ABE81E2438A16100C870FD /* ContentView.swift */,
-				47ABE8412438A5F400C870FD /* GrowingTextView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		47ABE8462438AD8300C870FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +155,6 @@
 			);
 			name = GrowingTextView;
 			packageProductDependencies = (
-				47ABE8442438AB0E00C870FD /* SnapshotTesting */,
 			);
 			productName = GrowingTextView;
 			productReference = 47ABE8172438A16100C870FD /* GrowingTextView.app */;
@@ -170,6 +174,9 @@
 				47ABE82F2438A16500C870FD /* PBXTargetDependency */,
 			);
 			name = GrowingTextViewTests;
+			packageProductDependencies = (
+				47ABE8492438AD8E00C870FD /* SnapshotTesting */,
+			);
 			productName = GrowingTextViewTests;
 			productReference = 47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -240,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47ABE81B2438A16100C870FD /* AppDelegate.swift in Sources */,
-				47ABE8422438A5F400C870FD /* GrowingTextView.swift in Sources */,
 				47ABE81D2438A16100C870FD /* SceneDelegate.swift in Sources */,
 				47ABE81F2438A16100C870FD /* ContentView.swift in Sources */,
 			);
@@ -516,7 +522,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		47ABE8442438AB0E00C870FD /* SnapshotTesting */ = {
+		47ABE8492438AD8E00C870FD /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 47ABE8432438AB0E00C870FD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
