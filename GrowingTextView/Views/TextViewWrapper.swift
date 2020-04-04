@@ -2,24 +2,28 @@ import SwiftUI
 
 struct TextViewWrapper: UIViewRepresentable {
 
-  init(text: Binding<String?>, focused: Binding<Bool>) {
+  init(text: Binding<String?>, focused: Binding<Bool>, contentHeight: Binding<CGFloat>) {
     self._text = text
     self._focused = focused
+    self._contentHeight = contentHeight
   }
 
   @Binding var text: String?
   @Binding var focused: Bool
+  @Binding var contentHeight: CGFloat
 
   func makeUIView(context: Context) -> UITextView {
     let textView = UITextView()
     textView.delegate = context.coordinator
     textView.font = .systemFont(ofSize: 16)
     textView.backgroundColor = .clear
+    textView.clearsOnInsertion = true
+    textView.text = text
     return textView
   }
 
   func makeCoordinator() -> Coordinator {
-    Coordinator(text: $text, focused: $focused)
+    Coordinator(text: $text, focused: $focused, contentHeight: $contentHeight)
   }
 
   func updateUIView(_ uiView: UITextView, context: Context) {
@@ -28,16 +32,19 @@ struct TextViewWrapper: UIViewRepresentable {
 
   class Coordinator: NSObject, UITextViewDelegate {
 
-    init(text: Binding<String?>, focused: Binding<Bool>) {
+    init(text: Binding<String?>, focused: Binding<Bool>, contentHeight: Binding<CGFloat>) {
       self._text = text
       self._focused = focused
+      self._contentHeight = contentHeight
     }
 
     @Binding private var text: String?
     @Binding private var focused: Bool
+    @Binding private var contentHeight: CGFloat
 
     func textViewDidChange(_ textView: UITextView) {
       text = textView.text
+      contentHeight = textView.contentSize.height
     }
 
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -46,8 +53,8 @@ struct TextViewWrapper: UIViewRepresentable {
 
     func textViewDidEndEditing(_ textView: UITextView) {
       focused = false
+      contentHeight = text == nil ? 0 : textView.contentSize.height
     }
-
   }
 }
 
@@ -56,7 +63,7 @@ struct TextViewWrapper_Previews: PreviewProvider {
   @State static var text: String?
 
   static var previews: some View {
-    TextViewWrapper(text: $text, focused: .constant(false))
+    TextViewWrapper(text: $text, focused: .constant(false), contentHeight: .constant(0))
   }
 }
 #endif

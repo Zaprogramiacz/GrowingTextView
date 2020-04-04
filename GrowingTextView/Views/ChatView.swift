@@ -13,7 +13,6 @@ struct ChatView: View {
       VStack(spacing: 0) {
         HStack(alignment: .center) {
           GrowingTextInputView(text: $text, placeholder: "Message")
-            .frame(height: 36)
             .cornerRadius(10)
           Button(action: sendAction) {
             Text("Send")
@@ -28,27 +27,17 @@ struct ChatView: View {
           }.padding(.top, 16)
           .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
             .animation(animationsActive ? .default : nil)
-        }.overlay(
-          LinearGradient(
-            gradient: .init(stops: [
-              .init(color: Color.white.opacity(0.1), location: 0.80),
-              .init(color: .white, location: 1.0)
-            ]),
-            startPoint: .top,
-            endPoint: .bottom
-          )
-        )
-          .edgesIgnoringSafeArea(.bottom)
+        }.edgesIgnoringSafeArea(.bottom)
       }
     }
   }
 
   func sendAction() {
     guard let text = text, !text.isEmpty else { return }
-    UIApplication.shared.windows.forEach { $0.endEditing(true)}
     let newMessage = Message(text: text)
     messages.insert(newMessage, at: 0)
     self.text = nil
+    UIApplication.shared.windows.forEach { $0.endEditing(true)}
   }
 
   func messageView(text: String) -> some View {

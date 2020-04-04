@@ -13,7 +13,7 @@ class ChatViewTests: XCTestCase {
 
   func testSnapshot() {
     let longMessage = Array(repeating: "very", count: 50).joined(separator: " ")
-    let view = ChatView(text: "Andrzej", messages: [
+    let view = ChatView(messages: [
       .init(text: "Message 1"),
       .init(text: "Message 2"),
       .init(text: "Very " + longMessage + " long message 3"),
