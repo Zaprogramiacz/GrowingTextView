@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,23 +12,10 @@
 		47ABE81F2438A16100C870FD /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE81E2438A16100C870FD /* ChatView.swift */; };
 		47ABE8212438A16400C870FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8202438A16400C870FD /* Assets.xcassets */; };
 		47ABE8272438A16400C870FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8252438A16400C870FD /* LaunchScreen.storyboard */; };
-		47ABE84A2438AD8E00C870FD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 47ABE8492438AD8E00C870FD /* SnapshotTesting */; };
 		47ABE84C2438AF1A00C870FD /* TextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */; };
 		47ABE84E2438B74E00C870FD /* GrowingTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE84D2438B74E00C870FD /* GrowingTextInputView.swift */; };
 		47ABE8562438CCC900C870FD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8552438CCC900C870FD /* Color.swift */; };
-		47ABE8582438CEEE00C870FD /* GrowingTextInputViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8572438CEEE00C870FD /* GrowingTextInputViewTests.swift */; };
-		47ABE85A2438E03700C870FD /* ChatViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8592438E03700C870FD /* ChatViewTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		47ABE82E2438A16500C870FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 47ABE80F2438A16100C870FD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 47ABE8162438A16100C870FD;
-			remoteInfo = GrowingTextView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		47ABE8172438A16100C870FD /* GrowingTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowingTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,13 +25,9 @@
 		47ABE8202438A16400C870FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47ABE8262438A16400C870FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47ABE8282438A16400C870FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowingTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		47ABE8332438A16500C870FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWrapper.swift; sourceTree = "<group>"; };
 		47ABE84D2438B74E00C870FD /* GrowingTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextInputView.swift; sourceTree = "<group>"; };
 		47ABE8552438CCC900C870FD /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		47ABE8572438CEEE00C870FD /* GrowingTextInputViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextInputViewTests.swift; sourceTree = "<group>"; };
-		47ABE8592438E03700C870FD /* ChatViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47ABE82A2438A16500C870FD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47ABE84A2438AD8E00C870FD /* SnapshotTesting in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				47ABE8192438A16100C870FD /* GrowingTextView */,
-				47ABE8302438A16500C870FD /* GrowingTextViewTests */,
 				47ABE8182438A16100C870FD /* Products */,
 				47ABE8462438AD8300C870FD /* Frameworks */,
 			);
@@ -80,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				47ABE8172438A16100C870FD /* GrowingTextView.app */,
-				47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,29 +69,12 @@
 			path = GrowingTextView;
 			sourceTree = "<group>";
 		};
-		47ABE8302438A16500C870FD /* GrowingTextViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				47ABE84F2438C13800C870FD /* Views */,
-				47ABE83D2438A2EA00C870FD /* SupportingFiles */,
-			);
-			path = GrowingTextViewTests;
-			sourceTree = "<group>";
-		};
 		47ABE83C2438A2BB00C870FD /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				47ABE8202438A16400C870FD /* Assets.xcassets */,
 				47ABE8252438A16400C870FD /* LaunchScreen.storyboard */,
 				47ABE8282438A16400C870FD /* Info.plist */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		47ABE83D2438A2EA00C870FD /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				47ABE8332438A16500C870FD /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -147,15 +103,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		47ABE84F2438C13800C870FD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				47ABE8572438CEEE00C870FD /* GrowingTextInputViewTests.swift */,
-				47ABE8592438E03700C870FD /* ChatViewTests.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		47ABE8542438CC5800C870FD /* Extensions */ = {
@@ -188,27 +135,6 @@
 			productReference = 47ABE8172438A16100C870FD /* GrowingTextView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		47ABE82C2438A16500C870FD /* GrowingTextViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 47ABE8392438A16500C870FD /* Build configuration list for PBXNativeTarget "GrowingTextViewTests" */;
-			buildPhases = (
-				47ABE8292438A16500C870FD /* Sources */,
-				47ABE82A2438A16500C870FD /* Frameworks */,
-				47ABE82B2438A16500C870FD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				47ABE82F2438A16500C870FD /* PBXTargetDependency */,
-			);
-			name = GrowingTextViewTests;
-			packageProductDependencies = (
-				47ABE8492438AD8E00C870FD /* SnapshotTesting */,
-			);
-			productName = GrowingTextViewTests;
-			productReference = 47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,11 +148,6 @@
 					47ABE8162438A16100C870FD = {
 						CreatedOnToolsVersion = 11.4;
 					};
-					47ABE82C2438A16500C870FD = {
-						CreatedOnToolsVersion = 11.4;
-						LastSwiftMigration = 1140;
-						TestTargetID = 47ABE8162438A16100C870FD;
-					};
 				};
 			};
 			buildConfigurationList = 47ABE8122438A16100C870FD /* Build configuration list for PBXProject "GrowingTextView" */;
@@ -239,14 +160,12 @@
 			);
 			mainGroup = 47ABE80E2438A16100C870FD;
 			packageReferences = (
-				47ABE8432438AB0E00C870FD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 47ABE8182438A16100C870FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				47ABE8162438A16100C870FD /* GrowingTextView */,
-				47ABE82C2438A16500C870FD /* GrowingTextViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,13 +177,6 @@
 			files = (
 				47ABE8272438A16400C870FD /* LaunchScreen.storyboard in Resources */,
 				47ABE8212438A16400C870FD /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47ABE82B2438A16500C870FD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,24 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47ABE8292438A16500C870FD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47ABE85A2438E03700C870FD /* ChatViewTests.swift in Sources */,
-				47ABE8582438CEEE00C870FD /* GrowingTextInputViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		47ABE82F2438A16500C870FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 47ABE8162438A16100C870FD /* GrowingTextView */;
-			targetProxy = 47ABE82E2438A16500C870FD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		47ABE8252438A16400C870FD /* LaunchScreen.storyboard */ = {
@@ -467,53 +362,6 @@
 			};
 			name = Release;
 		};
-		47ABE83A2438A16500C870FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XRT2TCPYP7;
-				INFOPLIST_FILE = GrowingTextViewTests/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mg.GrowingTextViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrowingTextView.app/GrowingTextView";
-			};
-			name = Debug;
-		};
-		47ABE83B2438A16500C870FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XRT2TCPYP7;
-				INFOPLIST_FILE = GrowingTextViewTests/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mg.GrowingTextViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrowingTextView.app/GrowingTextView";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,35 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47ABE8392438A16500C870FD /* Build configuration list for PBXNativeTarget "GrowingTextViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				47ABE83A2438A16500C870FD /* Debug */,
-				47ABE83B2438A16500C870FD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		47ABE8432438AB0E00C870FD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		47ABE8492438AD8E00C870FD /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 47ABE8432438AB0E00C870FD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47ABE80F2438A16100C870FD /* Project object */;
 }
