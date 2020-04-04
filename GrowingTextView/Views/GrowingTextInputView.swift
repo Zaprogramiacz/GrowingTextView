@@ -38,7 +38,7 @@ struct GrowingTextInputView: View {
   }
 }
 
-extension Optional where Wrapped == String {
+private extension Optional where Wrapped == String {
   var orEmpty: String {
     self ?? ""
   }
