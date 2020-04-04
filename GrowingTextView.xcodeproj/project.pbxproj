@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		47ABE8212438A16400C870FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8202438A16400C870FD /* Assets.xcassets */; };
 		47ABE8272438A16400C870FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8252438A16400C870FD /* LaunchScreen.storyboard */; };
 		47ABE8322438A16500C870FD /* GrowingTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */; };
+		47ABE8422438A5F400C870FD /* GrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8412438A5F400C870FD /* GrowingTextView.swift */; };
+		47ABE8452438AB0E00C870FD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 47ABE8442438AB0E00C870FD /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowingTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextViewTests.swift; sourceTree = "<group>"; };
 		47ABE8332438A16500C870FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47ABE8412438A5F400C870FD /* GrowingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47ABE8452438AB0E00C870FD /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				47ABE81E2438A16100C870FD /* ContentView.swift */,
+				47ABE8412438A5F400C870FD /* GrowingTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = GrowingTextView;
+			packageProductDependencies = (
+				47ABE8442438AB0E00C870FD /* SnapshotTesting */,
+			);
 			productName = GrowingTextView;
 			productReference = 47ABE8172438A16100C870FD /* GrowingTextView.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 47ABE80E2438A16100C870FD;
+			packageReferences = (
+				47ABE8432438AB0E00C870FD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 47ABE8182438A16100C870FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -229,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47ABE81B2438A16100C870FD /* AppDelegate.swift in Sources */,
+				47ABE8422438A5F400C870FD /* GrowingTextView.swift in Sources */,
 				47ABE81D2438A16100C870FD /* SceneDelegate.swift in Sources */,
 				47ABE81F2438A16100C870FD /* ContentView.swift in Sources */,
 			);
@@ -491,6 +503,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47ABE8432438AB0E00C870FD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47ABE8442438AB0E00C870FD /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47ABE8432438AB0E00C870FD /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47ABE80F2438A16100C870FD /* Project object */;
 }
