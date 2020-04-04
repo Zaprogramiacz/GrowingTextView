@@ -14,6 +14,7 @@
 		47ABE8272438A16400C870FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47ABE8252438A16400C870FD /* LaunchScreen.storyboard */; };
 		47ABE8322438A16500C870FD /* GrowingTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */; };
 		47ABE84A2438AD8E00C870FD /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 47ABE8492438AD8E00C870FD /* SnapshotTesting */; };
+		47ABE84C2438AF1A00C870FD /* TextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		47ABE82D2438A16500C870FD /* GrowingTextViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowingTextViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47ABE8312438A16500C870FD /* GrowingTextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextViewTests.swift; sourceTree = "<group>"; };
 		47ABE8332438A16500C870FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				47ABE81E2438A16100C870FD /* ContentView.swift */,
+				47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47ABE81B2438A16100C870FD /* AppDelegate.swift in Sources */,
+				47ABE84C2438AF1A00C870FD /* TextViewWrapper.swift in Sources */,
 				47ABE81D2438A16100C870FD /* SceneDelegate.swift in Sources */,
 				47ABE81F2438A16100C870FD /* ContentView.swift in Sources */,
 			);
