@@ -1,7 +1,5 @@
 import SwiftUI
 
-var animationsActive = true
-
 struct ChatView: View {
   @State var text: String?
   @State var messages: [Message] = []
@@ -26,7 +24,6 @@ struct ChatView: View {
             }
           }.padding(.top, 16)
           .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-            .animation(animationsActive ? .default : nil)
         }.edgesIgnoringSafeArea(.bottom)
       }
     }

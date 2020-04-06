@@ -17,8 +17,6 @@ struct TextViewWrapper: UIViewRepresentable {
     textView.delegate = context.coordinator
     textView.font = .systemFont(ofSize: 16)
     textView.backgroundColor = .clear
-    textView.clearsOnInsertion = true
-    textView.text = text
     return textView
   }
 
