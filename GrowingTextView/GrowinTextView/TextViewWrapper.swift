@@ -19,6 +19,7 @@ struct TextViewWrapper: UIViewRepresentable {
     textView.delegate = context.coordinator
     textView.font = .systemFont(ofSize: 16)
     textView.backgroundColor = .clear
+    textView.autocorrectionType = .no
     return textView
   }
 
