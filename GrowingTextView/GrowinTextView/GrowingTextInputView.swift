@@ -46,12 +46,6 @@ struct GrowingTextInputView: View {
   }
 }
 
-private extension Optional where Wrapped == String {
-  var orEmpty: String {
-    self ?? ""
-  }
-}
-
 #if DEBUG
 struct GrowingTextInputView_Previews: PreviewProvider {
   @State static var text: String?

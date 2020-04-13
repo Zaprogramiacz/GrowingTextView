@@ -15,6 +15,7 @@
 		47ABE84C2438AF1A00C870FD /* TextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */; };
 		47ABE84E2438B74E00C870FD /* GrowingTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE84D2438B74E00C870FD /* GrowingTextInputView.swift */; };
 		47ABE8562438CCC900C870FD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ABE8552438CCC900C870FD /* Color.swift */; };
+		47BF62372444E27000F8223A /* String+OrEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BF62362444E27000F8223A /* String+OrEmpty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWrapper.swift; sourceTree = "<group>"; };
 		47ABE84D2438B74E00C870FD /* GrowingTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTextInputView.swift; sourceTree = "<group>"; };
 		47ABE8552438CCC900C870FD /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		47BF62362444E27000F8223A /* String+OrEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+OrEmpty.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +46,9 @@
 		47ABE80E2438A16100C870FD = {
 			isa = PBXGroup;
 			children = (
+				47ABE8462438AD8300C870FD /* Frameworks */,
 				47ABE8192438A16100C870FD /* GrowingTextView */,
 				47ABE8182438A16100C870FD /* Products */,
-				47ABE8462438AD8300C870FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,10 +63,11 @@
 		47ABE8192438A16100C870FD /* GrowingTextView */ = {
 			isa = PBXGroup;
 			children = (
-				47ABE8542438CC5800C870FD /* Extensions */,
 				47ABE83E2438A2FA00C870FD /* Application */,
+				47ABE83F2438A30600C870FD /* ExampleView */,
+				47ABE8542438CC5800C870FD /* Extensions */,
+				47BF62352444E21600F8223A /* GrowinTextView */,
 				47ABE83C2438A2BB00C870FD /* SupportingFiles */,
-				47ABE83F2438A30600C870FD /* Views */,
 			);
 			path = GrowingTextView;
 			sourceTree = "<group>";
@@ -73,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				47ABE8202438A16400C870FD /* Assets.xcassets */,
-				47ABE8252438A16400C870FD /* LaunchScreen.storyboard */,
 				47ABE8282438A16400C870FD /* Info.plist */,
+				47ABE8252438A16400C870FD /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -88,14 +91,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		47ABE83F2438A30600C870FD /* Views */ = {
+		47ABE83F2438A30600C870FD /* ExampleView */ = {
 			isa = PBXGroup;
 			children = (
 				47ABE81E2438A16100C870FD /* ChatView.swift */,
-				47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */,
-				47ABE84D2438B74E00C870FD /* GrowingTextInputView.swift */,
 			);
-			path = Views;
+			path = ExampleView;
 			sourceTree = "<group>";
 		};
 		47ABE8462438AD8300C870FD /* Frameworks */ = {
@@ -109,8 +110,18 @@
 			isa = PBXGroup;
 			children = (
 				47ABE8552438CCC900C870FD /* Color.swift */,
+				47BF62362444E27000F8223A /* String+OrEmpty.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		47BF62352444E21600F8223A /* GrowinTextView */ = {
+			isa = PBXGroup;
+			children = (
+				47ABE84D2438B74E00C870FD /* GrowingTextInputView.swift */,
+				47ABE84B2438AF1A00C870FD /* TextViewWrapper.swift */,
+			);
+			path = GrowinTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 			files = (
 				47ABE81B2438A16100C870FD /* AppDelegate.swift in Sources */,
 				47ABE84E2438B74E00C870FD /* GrowingTextInputView.swift in Sources */,
+				47BF62372444E27000F8223A /* String+OrEmpty.swift in Sources */,
 				47ABE84C2438AF1A00C870FD /* TextViewWrapper.swift in Sources */,
 				47ABE81D2438A16100C870FD /* SceneDelegate.swift in Sources */,
 				47ABE81F2438A16100C870FD /* ChatView.swift in Sources */,

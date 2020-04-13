@@ -12,6 +12,8 @@ struct TextViewWrapper: UIViewRepresentable {
   @Binding var focused: Bool
   @Binding var contentHeight: CGFloat
 
+  // MARK: - UIViewRepresentable
+
   func makeUIView(context: Context) -> UITextView {
     let textView = UITextView()
     textView.delegate = context.coordinator
@@ -39,6 +41,8 @@ struct TextViewWrapper: UIViewRepresentable {
     @Binding private var text: String?
     @Binding private var focused: Bool
     @Binding private var contentHeight: CGFloat
+
+    // MARK: - UITextViewDelegate
 
     func textViewDidChange(_ textView: UITextView) {
       text = textView.text
