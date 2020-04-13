@@ -7,4 +7,4 @@ If you are planning to write a messaging feature or you are just a SwiftUI enthu
 
 ![preview](Resources/growing_text_view.gif)
 
-# [License](LICENSE.md)
+# [License](LICENSE)
